@@ -8,6 +8,13 @@ drivers know that the InfoTechCenter 4.0 is loading
 
 """
 
-print("\n\n Welcome - InfoTechCenter 4.0")
+#Import Libraries Here
+import time
 
+sleep = 2
+
+
+
+print("\n\n Welcome - InfoTechCenter 4.0")
+time.sleep(sleep)
 print("\nInfoTech Center 4.0 is loading")
