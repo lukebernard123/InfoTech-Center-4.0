@@ -1,4 +1,4 @@
-# Programmer: Mr.Lange
+# Programmer: Luke Bernard
 # Date: 1.20.2023
 # Program: Infotech Center Upgrades
 
@@ -20,6 +20,7 @@ a = 0
 time.sleep(2)
 print('')
 
+
 while x != 20:
     x += 1
     b = ("\033[1;33;40m InfoTech Center OS is Loading" + "." * a)
@@ -29,4 +30,7 @@ while x != 20:
     if a == 4:
         a = 0
     if x == 20:
-        print('\033[1;32;40m Done!')
+        print('\033[1;32;40mMission Accomplished - Retina Scanned - Access Granted')
+
+
+
