@@ -1,11 +1,6 @@
 # Programmer: Mr.Lange
-# Date: 1.20.2023
-# Program: Infotech Center Upgrades
+# Date: 2.8.2023
+# Program: Weather System Updates
 
-"""
-Our Welcome Screen will start our program
-letting drivers know that the InfoTech Center 4.0 is loading
-"""
 
-print ("\n\n Welcome to InfoTechCenter 4.0")
-print("\nInfoTechCenter 4.0 is loading")
+
