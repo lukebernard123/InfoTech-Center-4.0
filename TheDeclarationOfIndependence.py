@@ -1,4 +1,5 @@
 
+
 # Programmer: Luke Bernard
 # Date Merged: 2.6.2023
 # Merged welcome screen and gasoline branches - stable
@@ -42,7 +43,7 @@ while x != 20:
 
 # Programmer: Luke Bernard
 # Date: 1.20.2023
-# Program: Infotech Center Upgrades
+# Program: Infotech Center Upgradesfuction
 
 
 """
@@ -112,11 +113,60 @@ def gasLevelAlert():
 
 
 
+
+
+
+
+
+# Date: 2.8.2023
+# Program: Weather System Updates
+# Programmer: Luke Bernard
+
+
+
+
+def weather():
+    weatherForcast = ["Snowing","Blizzard","Rain","Foggy","Windy","Icy","Sunshine"]
+    weatherCondition = random.choice(weatherForcast)
+    return weatherCondition 
+
+# Variable to call weather() once in our VRS
+weatherAlert = weather()
+
+
+
+
+
+
+# VRS () to respond to the weather conditions 
+def VehicleResponseSystem():
+    if weatherAlert == "Snowing":
+        print("\n NWS has changed your Alarm by 15 minutes because of the weather forcast of",weatherAlert)
+        print("VRS has been engaged, only allowing your vehicle to go 45 MPH")
+    elif weatherAlert == "Blizzard":
+        print("\n NWS has changed your Alarm by 30 minutes because of the weather forcast of",weatherAlert)
+        print("VRS has been engaged, only allowing your vehicle to go 35 MPH")
+    elif weatherAlert == "Rain":
+          print("\n NWS is calling for",weatherAlert),",please drive extra careful"
+    elif weatherAlert == "Foggy":
+          print("\n NWS is calling for",weatherAlert)," conditions, please drive extra careful"
+    elif weatherAlert == "Windy":
+          print("\n NWS is calling for",weatherAlert)," conditions, please drive extra careful"
+    elif weatherAlert == "Icy":
+          print("\n NWS has changed your Alarm by 60 minutes because of the weather forcast of",weatherAlert)
+          print("VRS has been engaged only allowing your vehicle to go 25 MPH")
+    else:
+        print("\nNWS is calling for", weatherAlert,"drive safley and have a wonderful day!") 
+          
+
+
+
+
+#Call Functions Here
+
+VehicleResponseSystem()
+
+
 gasLevelAlert()
-
-
-
-
-
-
+        
 
