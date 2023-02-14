@@ -87,13 +87,13 @@ def gasLevelAlert():
     milesToGasStationLow = round(random.uniform(1,25),2)
     milesToGasStationQuarterTank = round(random.uniform(26, 50), 2)
     if gasLevelIndicator == "Empty":
-        print("***WARNING YOU ARE ON EMPTY***")
+        print("***WARNING YOU ARE ON EMPTY***\n")
         sleep(1)
-        print("Calling Emergency Contact")
+        print("Calling Emergency Contact\n")
     elif gasLevelIndicator == "Low":
         print("***Warning***")
         sleep(1)
-        print("Your gas tank is extremely low, checking Google Maps for the closest gas station.")
+        print("Your gas tank is extremely low, checking Google Maps for the closest gas station.\n")
         sleep(1)
         print("The closest gas station is,",listOfGasStations(),"which is", milesToGasStationLow,"miles away.")
     elif gasLevelIndicator == "QuarterTank":
@@ -101,11 +101,11 @@ def gasLevelAlert():
         sleep(1)
         print("Your gas tank is at a Quarter Tank and the closest gas station is", listOfGasStations(),"which is", milesToGasStationQuarterTank, "miles away.")
     elif gasLevelIndicator == "Half Tank":
-        print("Your gas tank is a half of a tank full which is plenty of gas to make it to your destination today!")
+        print("Your gas tank is a half of a tank full which is plenty of gas to make it to your destination today!\n")
     elif gasLevelIndicator == "Three Quarter Tank":
-        print("Your gas tank is three quarters full, which is enough to reach your destination today.")
+        print("Your gas tank is three quarters full, which is enough to reach your destination today.\n")
     else:
-        print("Your gas tank is full - Yeah! Congrats - Vroom Vroom")
+        print("Your gas tank is full - Yeah! Congrats - Vroom Vroom\n")
 
 
 
@@ -141,32 +141,33 @@ weatherAlert = weather()
 # VRS () to respond to the weather conditions 
 def VehicleResponseSystem():
     if weatherAlert == "Snowing":
-        print("\n NWS has changed your Alarm by 15 minutes because of the weather forcast of",weatherAlert)
-        print("VRS has been engaged, only allowing your vehicle to go 45 MPH")
+        print("\n NWS has changed your Alarm by 15 minutes because of the weather forcast of\n",weatherAlert)
+        print("VRS has been engaged, only allowing your vehicle to go 45 MPH\n")
     elif weatherAlert == "Blizzard":
-        print("\n NWS has changed your Alarm by 30 minutes because of the weather forcast of",weatherAlert)
-        print("VRS has been engaged, only allowing your vehicle to go 35 MPH")
+        print("\n NWS has changed your Alarm by 30 minutes because of the weather forcast of\n",weatherAlert)
+        print("VRS has been engaged, only allowing your vehicle to go 35 MPH\n")
     elif weatherAlert == "Rain":
-          print("\n NWS is calling for",weatherAlert),",please drive extra careful"
+          print("\n NWS is calling for",weatherAlert),",please drive extra careful\n"
     elif weatherAlert == "Foggy":
-          print("\n NWS is calling for",weatherAlert)," conditions, please drive extra careful"
+          print("\n NWS is calling for",weatherAlert)," conditions, please drive extra careful\n"
     elif weatherAlert == "Windy":
-          print("\n NWS is calling for",weatherAlert)," conditions, please drive extra careful"
+          print("\n NWS is calling for",weatherAlert)," conditions, please drive extra careful\n"
     elif weatherAlert == "Icy":
-          print("\n NWS has changed your Alarm by 60 minutes because of the weather forcast of",weatherAlert)
-          print("VRS has been engaged only allowing your vehicle to go 25 MPH")
+          print("\n NWS has changed your Alarm by 60 minutes because of the weather forcast of\n",weatherAlert)
+          print("VRS has been engaged only allowing your vehicle to go 25 MPH\n")
     else:
-        print("\nNWS is calling for", weatherAlert,"drive safley and have a wonderful day!") 
+        print("\nNWS is calling for", weatherAlert,"drive safley and have a wonderful day!\n") 
           
 
 
 
 
 #Call Functions Here
-
+print("\nNational Weather Service is checking conditions....")
+sleep(2)
 VehicleResponseSystem()
-
-
+print("\nChecking current gas levels...")
+sleep(2)
 gasLevelAlert()
         
 
